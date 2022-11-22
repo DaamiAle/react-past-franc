@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-past-franc/static/css/main.ab4bb9d8.css",
+    "main.js": "/react-past-franc/static/js/main.b8543221.js",
+    "static/js/787.297cefb6.chunk.js": "/react-past-franc/static/js/787.297cefb6.chunk.js",
+    "index.html": "/react-past-franc/index.html",
+    "main.ab4bb9d8.css.map": "/react-past-franc/static/css/main.ab4bb9d8.css.map",
+    "main.b8543221.js.map": "/react-past-franc/static/js/main.b8543221.js.map",
+    "787.297cefb6.chunk.js.map": "/react-past-franc/static/js/787.297cefb6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab4bb9d8.css",
+    "static/js/main.b8543221.js"
+  ]
+}
