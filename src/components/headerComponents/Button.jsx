@@ -1,23 +1,17 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
-
 
 const Button = ({texto}) => {
 
     const handleClick = () => {
         if(texto === "Inicio"){
-            document.title = "Pasteleria Franccesca";
-            window.location.href = "http://localhost:3000/";
-
+            window.location.href = "/";
         }else{
-            document.title = "Pasteleria Franccesca - "+ texto;
-            window.location.href = "http://localhost:3000/"+texto;
+            window.location.href = "/" + texto;
         }
-
     }
     return (
         <>
-            <p type="button" onClick={handleClick}>{texto}</p>
+            <p className="nav-but" type="button" onClick={()=>handleClick()}>{texto}</p>
         </>
     );
 }

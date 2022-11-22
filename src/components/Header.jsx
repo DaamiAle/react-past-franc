@@ -1,23 +1,22 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Button from "./headerComponents/Button";
-import BarraBusqueda from "./headerComponents/Busqueda"
+import Navegacion from "./headerComponents/Navegacion"
+import Carrito from "./headerComponents/Carrito"
 
-const Header = ({actualPage}) => {
+
+const Header = () => {
+    // 
     return (
-        <Fragment>
-            <Container>
-            <Row ><h1>Pasteleria Franccesca</h1></Row>
-            <Row>
-                <Col><Button texto="Inicio"/></Col>
-                <Col><Button texto="Panaderia"/></Col>
-                <Col><Button texto="Chocolateria"/></Col>
-                <Col><Button texto="Pasteleria"/></Col>
-                <Col><Button texto="Contacto"/></Col>
-                <Col><BarraBusqueda/></Col>
-            </Row>
+        <>
+            <Container id="header">
+                <Row><br></br></Row>
+                <Row><p id="titulo-principal">Pastelería Franccesca</p></Row>
+                <Row className="nav-bar">
+                    <Col className="col-11"><Navegacion/></Col>
+                    <Col className="col-1"><Carrito/></Col>
+                </Row>
             </Container>
-        </Fragment>
+        </>
     );
 }
 

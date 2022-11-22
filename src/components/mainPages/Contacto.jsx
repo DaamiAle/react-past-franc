@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
 
+
 const Contacto = () => {
     // al clickear el boton enviar, se ejecuta la funcion handleSubmit
 
@@ -30,8 +31,8 @@ const Contacto = () => {
     };
     return (
         <>
-            <h4>Contacto</h4>
-            <p> Aqui podras enviarnos tus consultas, solicitar presupuestos, etc.</p>
+            <p className="titulo-sec">Contacto</p>
+            <p className="simple-text"> Aqui podras enviarnos tus consultas, solicitar presupuestos, etc.</p>
             <Form className="rounded border border-dark p-3">
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
@@ -48,6 +49,9 @@ const Contacto = () => {
                     <Form.Label>Mensaje</Form.Label>
                     <Form.Control as="textarea" rows={5} placeholder="Ingrese su mensaje o consulta" name="mensaje" value={mensaje} onChange= {handleChange} />
                 </Form.Group>
+                <br/>
+                <div class="g-recaptcha" data-sitekey="TU CLAVE DEL SITIO AQUÍ" data-callback="correctCaptcha"></div>
+                <br/>
                 <Form.Group controlId="formBasicSubmit">
                     <Form.Control type="submit" value="Enviar" className="btn btn-primary" onClick={handleSubmit} />
                 </Form.Group>
@@ -56,4 +60,16 @@ const Contacto = () => {
     );
 }
 
+
+// importamos la api recaptcha desde https://www.google.com/recaptcha/api.js
+/*
+
+
+const Contacto = () => {
+    return (
+        <>
+        </>
+    );
+}
+*/
 export default Contacto;
